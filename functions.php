@@ -1,4 +1,4 @@
-<?php 
+<?php
 function theme_styles()
 {
 	wp_enqueue_style('bootstrap-css', get_template_directory_uri().'/css/bootstrap.min.css');
@@ -27,13 +27,19 @@ function my_sidebars()
 			'id'            => 'sidebar-1',
 			'description'   => 'Cela apparait sur toutes les pages'
 		);
-	
-		register_sidebar($args);	
+
+		register_sidebar($args);
 }
 
 add_action('widgets_init', 'my_sidebars');
 
 //en tete
 add_theme_support('custom-header');
+
+//en tete
+add_theme_support('custom-thumbnails');
+
+//en tete
+add_theme_support('custom-background');
 
  ?>
