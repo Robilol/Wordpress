@@ -42,4 +42,19 @@ add_theme_support('custom-thumbnails');
 //en tete
 add_theme_support('custom-background');
 
+/* Type de contenu perso */
+
+add_action('init', 'custom_post_events');
+function custom_post_events()
+{
+	register_post_type('events',
+		array(
+			'labels' => array(
+				'name' => 'Events',
+				'singular_name' => 'event'
+			),
+			'public' => true
+		)
+);
+}
  ?>

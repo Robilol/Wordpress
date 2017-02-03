@@ -20,6 +20,16 @@ if (have_posts()) {
 }
 ?>
 </div>
+
+<?php
+$loop = new WP_Query(array('post_type'=>'events'));
+
+while ($loop->have_posts()) {
+	$loop->the_post();
+	the_title();
+	the_content();
+}
+ ?>
 <div class="sidebar">
 	<?php dynamic_sidebar('sidebar-1'); ?>
 </div>
