@@ -164,3 +164,71 @@ header img {
 .searchform input[type=submit]:hover {
     background-color: #45a049;
 }
+
+/* TABLEAU LST */
+.lst {
+	background-color: #f2f2f2;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 20px;
+}
+.lst h3 {
+	font-size: 22px;
+	text-align: center;
+}
+.lst table {
+    width: 100%;
+		border-collapse: collapse;
+	}
+
+.lst table, th, td {
+    /*border-bottom: 1px solid black;*/
+}
+
+.lst th, td {
+    padding: 15px;
+    text-align: center;
+}
+}
+.lst th {
+    height: 50px;
+}
+.lst tr:nth-child(even) {background-color: #C0C0C0}
+
+.lst thead tr {
+	background-color: #C0C0C0;
+	font-size: 20px;
+}
+
+/* FORMULAIRE LST */
+
+.lst-form h1 {
+	text-align: center;
+}
+
+.lst-form input[type=text] {
+	width: 30%;
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+
+}
+
+.lst-form input[type=submit] {
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.lst-form select {
+	width: 15%;
+	margin-left: 0;
+	margin-bottom: 10px;
+}
